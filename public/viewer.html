@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>Map Viewer</title>
+    <style>
+      #map {
+        height: 100%;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="./js/viewer.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGzDYXJgAIGTxoAT_DuUOMqbtJ4b4dqXo&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
